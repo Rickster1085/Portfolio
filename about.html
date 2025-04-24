@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Profile - Riccado Frayer II</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Shared Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        nav {
+            background-color: #73000A;
+            padding: 1rem 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown-content a {
+            color: #73000A;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url('https://www.sc.edu/about/offices_and_divisions/communications/images/horseshoe_hero.jpg');
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 5%;
+        }
+
+        .section-title {
+            color: #73000A;
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+        }
+
+        section {
+            padding: 5rem 5%;
+        }
+
+        footer {
+            background-color: #73000A;
+            color: white;
+            text-align: center;
+            padding: 2rem 5%;
+        }
+        .career-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .profile-section {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .timeline {
+            border-left: 3px solid #73000A;
+            padding-left: 2rem;
+            margin-left: 1rem;
+        }
+
+        .timeline-item {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -2.35rem;
+            top: 0;
+            width: 15px;
+            height: 15px;
+            background-color: #73000A;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Career Profile</a></li>
+            <li class="dropdown">
+                <a href="#projects">Projects ▼</a>
+                <div class="dropdown-content">
+                    <a href="business-comms.html">Business Communications</a>
+                    <a href="networking.html">Networking Skills</a>
+                    <a href="microsoft-office.html">Microsoft Office</a>
+                    <a href="projects.html">Technical Projects</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="career-profile">
+        <h2 class="section-title">Career Profile</h2>
+        <div class="career-content">
+            
+            <!-- Resume Summary Section -->
+            <div class="profile-section">
+                <h3>Professional Summary</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Education</h4>
+                        <p><strong>University of South Carolina</strong> | Columbia, SC<br>
+                        Bachelor of Integrated Information Technology | May 2026<br>
+                        GPA: 3.24 | Dean's List: 1 semester</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h4>Certifications</h4>
+                        <p><strong>Busisnes Management</strong></p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h4>Professional Experience</h4>
+                        <p><strong>Owner, Spick&Span Detailing</strong> | May 2024-Present<br>
+                        - Business operations management<br>
+                        - Digital marketing & social media strategy<br>
+                        - Inventory management systems</p>
+
+                        <p><strong>Asset Investigator, Walmart</strong> | Aug 2024-Nov 2024<br>
+                        - Loss prevention strategies<br>
+                        - High-value asset protection<br>
+                        - Collaborative security operations</p>
+
+                        <p><strong>Retail Operations Specialist, Walmart</strong> | May 2023-Aug 2024<br>
+                        - Customer service leadership<br>
+                        - Inventory management<br>
+                        - POS system operations</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h4>Technical Proficiencies</h4>
+                        <ul>
+                            <li>Programming: Python, Java, SQL (Beginner)</li>
+                            <li>Web Development: HTML</li>
+                            <li>Microsoft Office Suite: Expert</li>
+                            <li>Digital Marketing: Social Media Management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Career Goals Section -->
+            <div class="profile-section">
+                <h3>Goals</h3>
+                <ul>
+                    <li>Develop enterprise-level IT solutions for retail optimization</li>
+                    <li>Specialize in software development</li>
+                    <li>Earn AWS Cloud Practitioner certification by 2026</li>
+                    <li>Design professional websystems for a company</li>
+                </ul>
+            </div>
+
+            <!-- Resume Download -->
+            <div class="profile-section" style="text-align: center;">
+                <h3>Full Credentials</h3>
+                <a href="D:/E-port/ResumeEP.pdf" class="resume-download" download>
+                    Download Complete Resume (PDF)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Riccado Frayer II | University of South Carolina IIT Program</p>
+    </footer>
+</body>
+</html>
